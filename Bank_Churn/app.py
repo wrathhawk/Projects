@@ -25,6 +25,6 @@ if st.button("Predict"):
     prediction = model.predict(input_data)[0]
     
     if prediction == 1:
-        st.error("🚨 Zákazník pravděpodobně odejde!")
+        st.error("🚨 The customer will probadly leave!")
     else:
-        st.success("✅ Zákazník pravděpodobně zůstane.")
+        st.success("✅ The customer will probadly stay.")
