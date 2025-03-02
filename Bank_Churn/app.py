@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 
 # Načtení uloženého modelu (předtím ho musíš uložit pomocí pickle)
-with open("churn_pipeline.pkl", "rb") as file:
+with open("Bank_Churn/churn_pipeline.pkl", "rb") as file:
     model = pickle.load(file)
 
 # UI aplikace
