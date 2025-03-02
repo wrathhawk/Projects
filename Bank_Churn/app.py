@@ -24,7 +24,7 @@ if st.button("Predict"):
     input_data = pd.DataFrame([[credit_score, age, tenure, balance, products_number, credit_card, active_member, estimated_salary]], columns=["credit_score", "age", "tenure", "balance", "products_number", "credit_card", "active_member", "estimated_salary"])
     prediction = model.predict(input_data)[0]
     
-    if prediction == 1:
+    if prediction == 0:
         st.error("🚨 The customer will probadly leave!")
     else:
         st.success("✅ The customer will probadly stay.")
